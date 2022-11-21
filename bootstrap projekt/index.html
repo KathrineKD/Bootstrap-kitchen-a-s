@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bare - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" /> <!--ved endnu ikke hvad vi skal med den!!!!-->
+        <link rel="stylesheet" href="css/newsletter.css"> <!--css til newsletter-->
+        <link rel="stylesheet" href="css/køkken.css">
+    </head>
+    
+    
+    
+    
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Kitchen a/s</a>
+                    <!-- nedenstående er vores burger knap når vi kommer ned i en lille skærm via button https://www.linkedin.com/learning/bootstrap-5-essential-training/collapse?autoSkip=true&autoplay=true&resume=false&u=42436220 -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--dette gør at vores li kommer ind under vores burger menu-->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!--gør vores li pæner at se på (pæner på række + ny farve)-->
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li> <!--aria-current="page" gør at den side man er på er highligted i nav baren
+                       info fra hjemmeside https://a11y-guidelines.orange.com/en/articles/using-aria-current-attribute/-->
+                        <li class="nav-item"><a class="nav-link" href="#">Inspiration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Produkter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">News Letter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Om Os</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Page content-->
+
+<!-- Billede på forside 
+----------------------------------------------------------------------------------------------------------------------->
+            <!-- billedet skal være uden for en container hvis man vil havde den til at fylde hele breden af browseren 
+                + sæt breden til 100% ellers bliver billedet for stort -->
+                <img src="img/Køkken.png" alt="" style="width:100%;">
+                
+                <div class="container"> 
+                    <div class="text-center mt-5"><!--denne div centrer teksten-->
+                    <h1><b>Welcome to Kitchen a/s</b></h1>
+                    </div>
+                    </div>
+
+
+
+
+<!-- News Letter 
+------------------------------------------------------------------------------------->
+<div class="row d-flex justify-content-center align-items-center rows">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <img src="https://i.imgur.com/Dh7U4bp.png" width="200">
+                <span class="d-block mt-3">Subscribe to our newsletter in order not to miss new arrivals <br> promotions and discounts of our store</span>
+
+                <div class="mx-5">
+
+                   <div class="input-group mb-3 mt-4">
+                      <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- inspirations sektion
+----------------------------------------------------------------------------------------- -->
+<!-- FÅ HJÆLP + RET BILLEDE STR!!!! -->
+
+<!-- Slides only fra https://getbootstrap.com/docs/5.0/components/carousel/
+forklaring https://www.linkedin.com/learning/bootstrap-5-essential-training/carousel?autoplay=true&resume=false&u=42436220 -->
+<div class="row-cols-sm-1 row-cols-md-2"> <!--row-cols-2 gør at vi laver et grid der kun vil tillade 2 collums-->
+    <div class="col-6"> <!--denne klasse gør at vi laver en kollone-->
+        <div id="Carousel-med-inspirations-billeder" class="carousel slide" data-bs-ride="carousel"> <!--for at lave carousel skal klassen hedde "carousel slide" og data-bs-ride="carousel" er noget der bare skal med for at få det til at virke -->
+            <div class="carousel-inner">
+              <div class="carousel-item active"> <!--ved at der stå active er det denne carousel-item den starter ved-->
+                <img src="img/1køkken.jpg" class="d-block w-100" alt="..."> <!--vi har class="d-block w-100" med for at modgøre browserens default billede justering  -->
+              </div>
+              <div class="carousel-item">
+                <img src="img/2køkken.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/3køkken.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-6"> <!--denne klasse gør at vi laver en kollone (denne er ved siden af overstående kollone)-->
+    <p>Tekst.</p>
+   
+    </div>
+</div> 
+
+
+
+
+<!-- Produkter
+----------------------------------------------------------------------------------------------------------------->
+ <!--første række  -->
+<div class="container">
+     <div class="text-center mt-5"> <!--denne div centrer teksten-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>tekst</p>
+                </div>
+                <div class="col">
+                    <img src="img/bordplade.jpg" alt=""  width="75%">
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- anden række -->
+<div class="container">
+    <div class="text-center mt-5"> <!--denne div centrer teksten-->
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                <p>tekst</p>   
+               </div>
+               <div class="col">
+                <img src="img/Ovne.jpg" alt="" width="75%">
+               </div>  
+           </div>
+       </div>
+   </div>
+</div>
+
+<!-- trejde række -->
+<div class="container">
+    <div class="text-center mt-5"> <!--denne div centrer teksten-->
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                   <p>tekst</p>
+               </div>
+               <div class="col">
+                   <img src="img/vask.jpg" alt="" width="75%">
+               </div>  
+           </div>
+       </div>
+   </div>
+</div>
+
+
+
+<!-- om us afsnit
+----------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+    <div class="text-center mt-5"> <!--denne div centrer teksten-->
+        <h2>Om us</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/om us.jpg" alt="" width="100%">
+                </div>
+                <div class="col">
+                    <p>tekst</p>
+                </div>  
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
