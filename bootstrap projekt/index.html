@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Kitchen a/s</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" /> <!--ved endnu ikke hvad vi skal med den!!!!-->
+        <link rel="stylesheet" href="css/newsletter.css"> <!--css til newsletter-->
+        <link rel="stylesheet" href="css/styles1.css">
+    </head>
+    
+    
+    
+    
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark"> <!-- vi har slette bg-dark for at ændre på farven-->
+            <div class="container">
+                <a class="navbar-brand" href="#">Kitchen a/s</a>
+                    <!-- nedenstående er vores burger knap når vi kommer ned i en lille skærm via button https://www.linkedin.com/learning/bootstrap-5-essential-training/collapse?autoSkip=true&autoplay=true&resume=false&u=42436220 -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--dette gør at vores li kommer ind under vores burger menu-->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!--gør vores li pæner at se på (pæner på række + ny farve)-->
+                       <li class="nav-item"><a class="nav-link" href="#newsletter">News Letter</a></li> 
+                       <li class="nav-item"><a class="nav-link" href="#Carousel-med-inspirations-billeder">Inspiration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Produkter">Produkter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Om_os">Om Os</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Page content-->
+
+<!-- Billede på forside 
+----------------------------------------------------------------------------------------------------------------------->
+            <!-- billedet skal være uden for en container hvis man vil havde den til at fylde hele breden af browseren 
+                + sæt breden til 100% ellers bliver billedet for stort -->
+                <img src="img/Køkken.png" alt="billede af hvidt køkken" style="width:100%;">
+                
+                <div class="container"> 
+                    <div class="text-center mt-5"><!--denne div centrer teksten-->
+                    <h1><b>Welcome to Kitchen a/s</b></h1>
+                    </div>
+                    </div>
+
+
+
+
+<!-- News Letter 
+------------------------------------------------------------------------------------->
+<!-- smart den skifter fra boks til fuld skærm når i mindre skærm -->
+<div class="row d-flex justify-content-center align-items-center rows">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <img src="img/Mail.png" width="80" id="newsletter"> <!--width har gjordt at billedet er mindre -->
+                <span class="d-block mt-3"> <p >Subscribe til vores newsletter for ikke at gå glip <br>af nyhed og tilbud.</p>
+                  </span>
+
+                <div class="mx-5">
+
+                   <div class="input-group mb-3 mt-4">
+                      <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- inspirations sektion
+----------------------------------------------------------------------------------------- -->
+<!-- FÅ HJÆLP - de gider ikker stå vedsiden af hinadnen!!!! -->
+
+<!-- Slides only fra https://getbootstrap.com/docs/5.0/components/carousel/
+forklaring https://www.linkedin.com/learning/bootstrap-5-essential-training/carousel?autoplay=true&resume=false&u=42436220 -->
+<div class="container">
+        <div class="col"> <!--denne klasse gør at vi laver en kollone-->
+            <div id="Carousel-med-inspirations-billeder" class="carousel slide" data-bs-ride="carousel"> <!--for at lave carousel skal klassen hedde "carousel slide" og data-bs-ride="carousel" er noget der bare skal med for at få det til at virke -->
+                <div class="carousel-inner"> <!--gør at den ikke ligger over andre ting + man kan se den slide på hele siden-->
+                  <div class="carousel-item active"> <!--ved at der stå active er det denne carousel-item den starter ved-->
+                    <img src="img/1køkken.jpg" class="d-block w-100" alt="hvid og brug køkken"> <!--vi har class="d-block w-100" med for at modgøre browserens default billede justering  -->
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/2køkken.jpg" class="d-block w-100" alt="sort og træ køkken">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/3køkken.jpg" class="d-block w-100" alt="blå køkken">
+                  </div>
+                </div>
+            </div>
+        </div>
+    <!-- vi havde problemer med skiftning af billede størrelse - rettet i Ps -->
+    
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+</div>
+
+
+
+
+
+
+<!-- Produkter
+----------------------------------------------------------------------------------------------------------------->
+<div class="text-center mt-5"> <!--denne div centrer teksten-->
+<h2 id="Produkter"><b>Produkter</b></h2>
+</div>
+
+ <!--første række  -->
+<div class="container">
+     <div class="text-center mt-5"> <!--denne div centrer teksten-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Bordplader</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col">
+                    <img src="img/bordplade.jpg" alt="billede af en bordplade med ingridienser"  width="75%">
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- anden række -->
+<div class="container">
+    <div class="text-center mt-5"> <!--denne div centrer teksten-->
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                <h4>Ovne</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>     
+                </div>
+               <div class="col">
+                <img src="img/ovn.jpg" alt="billede af to ovne oven på hinanden" width="75%">
+               </div>  
+           </div>
+       </div>
+   </div>
+</div>
+
+
+
+<!-- trejde række -->
+<div class="container">
+    <div class="text-center mt-5"> <!--denne div centrer teksten-->
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                <h4>Håndvaske</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </div>
+               <div class="col">
+                   <img src="img/vask.jpg" alt="billede af en sort vask" width="75%">
+               </div>  
+           </div>
+       </div>
+   </div>
+</div>
+
+
+
+<!-- om us afsnit
+----------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+    <div class="text-center mt-5"> <!--denne div centrer teksten-->
+        <h3><b>Om Os</b></h3>
+        <br> <!--for at give luft-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/om us.jpg" alt="billede af et sort åben køkken" width="100%">
+                </div>
+                <div class="col">
+                    <p id="Om_os">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>  
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<br>
+
+
+
+
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

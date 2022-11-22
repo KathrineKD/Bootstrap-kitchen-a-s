@@ -1,0 +1,69 @@
+/* body{
+
+    background-color: #F9A826;
+} */
+
+.rows{
+/* rettet fra 100vh til 45vh */
+    height: 45vh;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: calc(1.5em + .75rem + 2px);
+    padding: .575rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 52px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card{
+
+    padding: 20px;
+    background-color: #eee;
+        padding-bottom: 50px;
+    padding-top: 50px;
+ 
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(71, 61, 61);
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.border-rad{
+
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+
+    color: #fff;
+    background-color: rgba(71, 61, 61, 80%); /*vi har lavet farven mere gennemsigtig (rgba sat til 80%*/
+    border-color: rgb(71, 61, 61);
+    /* vi har ændret de to overstående for at skifte farve på "knappen */
+}
+
+
+
+
+.border-rad:hover{
+   
+     background-color: rgb(79, 66, 66);
+    border-color: rgb(71, 61, 61);
+
+}

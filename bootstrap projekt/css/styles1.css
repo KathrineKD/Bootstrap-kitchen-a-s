@@ -1,0 +1,57 @@
+
+
+body{
+
+    background-color: #e9dece;
+}
+
+.navbar {
+    background-color: rgb(71, 61, 61);
+   
+}
+
+
+
+
+.one {
+/* height: center;     */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+
+
+
+
+
+/* vores knap fra news letter - taget fra styles.css og ændret farve */
+.btn-success {
+    color: #fff;
+    background-color: rgb(71, 61, 61);
+    border-color: rgb(71, 61, 61);
+  }
+  .btn-success:hover {
+    color: #fff;
+    background-color: rgb(71, 61, 61);
+    border-color: rgb(71, 61, 61);
+  }
+  .btn-check:focus + .btn-success, .btn-success:focus {
+    color: #fff;
+    background-color: rgb(71, 61, 61);
+    border-color: rgb(71, 61, 61);
+    box-shadow: 0 0 0 0.25rem rgba(71, 61, 61, 0.5);
+  }
+  .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(71, 61, 61);
+    border-color: #rgb(71, 61, 61);
+  }
+  .btn-check:checked + .btn-success:focus, .btn-check:active + .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus, .show > .btn-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(71, 61, 61, 0.5);
+  }
+  .btn-success:disabled, .btn-success.disabled {
+    color: #fff;
+    background-color: rgb(71, 61, 61);
+    border-color: rgb(71, 61, 61);
+  }
