@@ -10,22 +10,22 @@
 
 
 .form-control {
-    display: block;
-    width: 100%;
-    min-height: calc(1.5em + .75rem + 2px);
-    padding: .575rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
+ display: block; /**/
+    width: 100%; /* størrelse på firkaten i newslater*/
+    min-height: calc(1.5em + .75rem + 2px); /* Hvordan firkanter skal opfører sig når man gør fane mindre eller større */
+    padding: .575rem .75rem; /* Hvordan padding skal forhold sig til størrelsen*/ 
+    font-size: 1rem; /*Hvordan tekst skal forhold sig til størrelsen*/
+    font-weight: 400; /*Hvordan tekst er vægten */
+    line-height: 1.5; /* linje højde*/
+    color: #495057; 
+    background-color: #fff; 
     background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 52px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 1px solid #ced4da; /* grænse for firkaten farve*/
+    -webkit-appearance: none; /**/
+    -moz-appearance: none; /**/
+    appearance: none; /**/
+    border-radius: 52px; /**/
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; /* hvordan farve skal forholde sig til skiftning af farve*/
 }
 
 .card{
